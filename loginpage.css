@@ -1,0 +1,157 @@
+*{/*inatially allthing will be at origin*/
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;/*adding font*/
+}
+/*adding background in our html file*/
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+/*it is used to go center of screen*/
+.size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*this is used to make our login page creative*/
+.logo{
+    position: relative;
+    padding:10px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(185, 80, 80, 0.623);
+    border-radius: 7px;
+    box-shadow: 40px 40px rgba(17, 17, 17, 0.185);
+}
+/*it is used to modify heading tag*/
+.size .logo h1{
+    color: rgb(5, 252, 26);
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 30px;
+}
+/*this is used to modify our input div tags*/
+.size .logo .inpbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*this is used to modify our input tags*/
+.size .logo .inpbox input{
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(12, 12, 12);
+    background: transparent;
+    padding: 10px,10px;
+    border-radius: 10px;
+    color: rgba(251, 250, 252, 0.89);
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px #f1a6bc6b;
+}
+/*this is used to modify our placeholder in input tags*/ 
+.size .logo .inpbox input::placeholder{
+    color: rgba(121, 208, 235, 0.863);
+}
+/*to modifys para tags*/
+p{
+    color: rgb(252, 249, 249);
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+}
+/*to modifyes enter tags*/
+a{
+    color: rgb(255, 0, 0);
+}
+/*to modifyes button */
+button{
+    padding: 8px;
+    color: rgb(252, 227, 7);
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer ;
+    font-size:larger;
+}
+/*edit image of bubble*/
+.bubble img{
+    width: 50px;
+    animation: bubble2 5s linear infinite;/*adding animation*/
+}
+@keyframes bubble2{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 2;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 3;
+    }
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+/*editing multiple bubbles*/
+.bubble img:nth-child(1){
+    animation-delay: 1.6s;
+    width: 35px;
+}
+.bubble img:nth-child(2){
+    animation-delay: 1s;
+    width: 25px;
+}
+.bubble img:nth-child(3){
+    animation-delay: 2s;
+    width: 15px;
+}
+.bubble img:nth-child(4){
+    animation-delay: 3s;
+    width: 40px;
+}
+.bubble img:nth-child(5){
+    animation-delay: 2.5s;
+    width: 20px;
+}
+.bubble img:nth-child(6){
+    animation-delay: 1.5s;
+    width: 25px;
+}
+.bubble img:nth-child(7){
+    animation-delay: 1s;
+    width: 30px;
+}
+.bubble img:nth-child(8){
+    animation-delay: 3.5s;
+    width: 20px;
+}
+.bubble img:nth-child(9){
+    animation-delay: 2.3s;
+    width: 19px;
+}
+.bubble img:nth-child(10){
+    animation-delay: 1.8s;
+    width: 30px;
+}
