@@ -1,0 +1,85 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(-30deg,rgba(255, 0, 0, 0.76) 50%,rgba(255, 255, 0, 0.712) 50%) ;
+    /*filter */
+    animation:animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+.parent{
+    position: relative;
+    padding:50px;
+    width: 360px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.438);
+    border-radius: 7px;
+    box-shadow: 40px 40px rgba(0, 0, 0, 0.185);
+}
+.parent::after{
+    content: "";
+    position:absolute;
+    top: 5px;
+    left:5px;
+    right:5px;
+    bottom: 5px;
+    border-radius: 7px;
+    pointer-events:none;
+    background: linear-gradient(to bottom,rgba(98, 210, 255, 0.514),rgba(101, 245, 245, 0.438), transparent 30%,transparent 50%);
+}
+.parent .child h2{
+    color: rgb(252, 5, 5);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+.parent .child .inpbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.parent .child .inpbox input{
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(199, 74, 74);
+    background: transparent;
+    padding: 10px,10px;
+    border-radius: 8px;
+    color: rgba(57, 4, 182, 0.89);
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px #c752756b;
+}
+.parent .child .inpbox input::placeholder{
+    color: rgba(253, 12, 4, 0.863);
+}
+.parent .child .inpbox input[type="submit"]{
+    background: rgb(253, 6, 59);
+    color: rgb(2, 255, 255);
+    max-width: 100px;
+    padding: 8px 10px ;
+    box-shadow:5px 5px #c752756b;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+p{
+    color: red;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 5px;
+}
+a{
+    color: blue;
+}
